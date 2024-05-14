@@ -1,1 +1,1 @@
-# simple-text-adventure-game
+# Simple-Text-Adventure-Game
