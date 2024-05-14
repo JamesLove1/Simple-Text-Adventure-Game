@@ -1,11 +1,21 @@
 # Simple Text Adventure Game
+A Simple Text Advanture Game, game engin that is acessed through a game server. A good example of these sort 
+of games is  <a href="https://textadventures.co.uk/games/play/5zyoqrsugeopel3ffhz_vq">  Zork </a>.The game 
+engin logic was built from scratch using Java, Maven, and JUnit with proper testing. While the game
+entities and actions are read in from the file system. 
 
 ## Features
+The basic commands for this game are:
+<ul>
+    <li> <b>Inventory -</b> (or inv for short) lists all of the artefacts currently being carried by the player</li>
+    <li> <b>Get -</b> picks up a specified artefact from the current location and adds it into player’s inventory</li>
+    <li> <b>Drop -</b> puts down an artefact from player’s inventory and places it into the current location</li>
+    <li> <b>Goto -</b> moves the player from the current location to the specified location (if there is a path to that location)</li>
+    <li> <b>Look -</b> prints names and descriptions of entities in the current location and lists paths to other locations</li>
+</ul>
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
 
 ### Prerequisites
 
@@ -29,7 +39,6 @@ $ ./mvnw exec:java@server
 # Run the client to start querying
 $ ./mvnw exec:java@client -Dexec.args="James"
 ```
-
 
 ### Compiling
 
