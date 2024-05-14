@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <triggers>
+            <keyphrase>open</keyphrase>
+            <keyphrase>unlock</keyphrase>
+        </triggers>
+        <subjects>
+            <entity>gate</entity>
+            <entity>key</entity>
+        </subjects>
+        <consumed>
+            <entity>key</entity>
+        </consumed>
+        <produced>
+            <entity>pontoons</entity>
+        </produced>
+        <narration>You unlock the door and see the pontoons</narration>
+    </action>
+
+    <action>
+        <triggers>
+            <keyphrase>engin</keyphrase>
+        </triggers>
+        <subjects>
+            <entity>boat</entity>
+            <entity>pontoons</entity>
+            <entity>MotorBoatKillSwitch</entity>
+        </subjects>
+        <consumed>
+            <entity>MotorBoatKillSwitch</entity>
+        </consumed>
+        <produced>
+            <entity>sea</entity>
+        </produced>
+        <narration>start boat engin and go out to sea</narration>
+    </action>
+
+    <action>
+        <triggers>
+            <keyphrase>blowHorn</keyphrase>
+        </triggers>
+        <subjects>
+            <entity>magicHorn</entity>
+            <entity>fishingNet</entity>
+            <entity>sea</entity>
+        </subjects>
+        <consumed>
+            <entity>fishingNet</entity>
+        </consumed>
+        <produced>
+            <entity>showlOfSalmon</entity>
+            <entity>tuna</entity>
+        </produced>
+        <narration>a showl of salmon lay on the surface of the water</narration>
+    </action>
+
+    <action>
+        <triggers>
+            <keyphrase>catch</keyphrase>
+        </triggers>
+        <subjects>
+            <entity>fish</entity>
+            <entity>showlOfSalmon</entity>
+        </subjects>
+        <consumed>
+            <entity>showlOfSalmon</entity>
+        </consumed>
+        <produced>
+        </produced>
+        <narration>a showl of salmon lay on the surface of the water</narration>
+    </action>
+
+    <action>
+        <triggers>
+            <keyphrase>sell</keyphrase>
+        </triggers>
+        <subjects>
+            <entity>showlofsalmon</entity>
+            <entity>boathouse</entity>
+        </subjects>
+        <consumed>
+            <entity>showlofsalmon</entity>
+        </consumed>
+        <produced>
+            <entity>coin</entity>
+        </produced>
+        <narration>the old salty sea dog pays you a pounds £££</narration>
+    </action>
+
+    <action>
+        <triggers>
+            <keyphrase>sell</keyphrase>
+        </triggers>
+        <subjects>
+            <entity>tuna</entity>
+            <entity>boathouse</entity>
+        </subjects>
+        <consumed>
+            <entity>tuna</entity>
+        </consumed>
+        <produced>
+            <entity>coingold</entity>
+        </produced>
+        <narration>the old salty sea dog pays you a pounds £££</narration>
+    </action>
+
+
+</actions>
+
+
+
+
+
+<!--<action>-->
+<!--<triggers>-->
+<!--    <keyphrase>sell</keyphrase>-->
+<!--</triggers>-->
+<!--<subjects>-->
+<!--    <entity>tuna</entity>-->
+<!--    <entity>boathouse</entity>-->
+<!--</subjects>-->
+<!--<consumed>-->
+<!--    <entity>tuna</entity>-->
+<!--</consumed>-->
+<!--<produced>-->
+<!--</produced>-->
+<!--<narration>the old salty sea dog pays you a pounds £££</narration>-->
+<!--</action>-->

@@ -1,0 +1,98 @@
+digraph layout {
+    /* ortho splines just makes the arrows into straight lines (rather than curvy ones !) */
+    splines = ortho;
+    /* space everything out a bit to make it easier to see (for larger models) */
+    graph [ranksep="1" nodesep="1"];
+    node [shape = "rect"];
+
+    subgraph locations {
+
+        subgraph cluster001 {
+            node [shape = "none"];
+            beach [description = "A sandy Cornish Beach"];
+            subgraph artefacts {
+                node [shape = "diamond"];
+                MotorBoatKillSwitch [description = "A red kill switch"];
+            }
+            subgraph furniture {
+                node [shape = "hexagon"];
+                Dunes [description = "yellow rolling sand dunes"];
+            }
+        }
+
+        subgraph cluster002 {
+            node [shape = "none"];
+            marina [description = "a old marina "];
+            subgraph artefacts {
+                node [shape = "diamond"];
+                key [description = "A rusty old key"];
+                magicHorn [description = "A old horn said to call fish"];
+                fishingNet [description = "A fishing net used to catch fish"];
+            }
+            subgraph furniture {
+                node [shape = "hexagon"];
+                gate [description = "a gate leading to the pontoons"];
+            }
+        }
+
+        subgraph cluster003 {
+            node [shape = "none"];
+            boatHouse [description = "A dusty cellar"]
+            subgraph characters {
+                node [shape = "ellipse"];
+                saltyOldSeaDog [description = "an old man beaten down by his time at sea"];
+            }
+        }
+
+        subgraph cluster004 {
+            node [shape = "none"];
+            pontoons [description = "a wabble pontoon"]
+            subgraph artefacts {
+                node [shape = "diamond"];
+            }
+            subgraph furniture {
+            node [shape = "hexagon"];
+                boat [description = "a rusty old tin fisher boat"];
+            }
+        }
+
+        subgraph cluster005 {
+            node [shape = "none"];
+            sea [description = "a deep dark blue sea with the costline within view"]
+            subgraph furniture {
+                node [shape = "hexagon"];
+                blueSea [description = "blue sea"];
+                fish [description = "Salmon swimming beneath the waves"];
+            }
+        }
+
+        subgraph cluster999 {
+            node [shape = "none"];
+            storeroom [description = "Storage for any entities not placed in the game"]
+            subgraph characters {
+                node [shape = "ellipse"];
+            }
+            subgraph artefacts {
+            node [shape = "diamond"];
+                showlOfSalmon [description = "a showl of sammon"];
+                tuna [description = "a silver fish"];
+                coin [description = "coin"];
+                coingold [description = "gold coin"];
+            }
+            subgraph furniture {
+                node [shape = "hexagon"];
+            }
+        }
+
+    }
+
+    subgraph paths {
+        beach -> marina;
+        marina -> beach;
+        marina -> boatHouse;
+        pontoons -> marina;
+        boatHouse -> marina;
+        sea -> pontoons;
+    }
+
+}
