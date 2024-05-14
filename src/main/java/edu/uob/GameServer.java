@@ -26,8 +26,8 @@ public final class GameServer {
 
     public static void main(String[] args) throws IOException {
         //James Love - Added ("cw-stag"+ File.separator +) remove at a latter date
-        File entitiesFile = Paths.get( "cw-stag"+ File.separator + "config" + File.separator + "basic-entities.dot").toAbsolutePath().toFile();
-        File actionsFile = Paths.get( "cw-stag"+ File.separator + "config" + File.separator + "basic-actions.xml").toAbsolutePath().toFile();
+        File entitiesFile = Paths.get("config" + File.separator + "basic-entities.dot").toAbsolutePath().toFile();
+        File actionsFile = Paths.get( "config" + File.separator + "basic-actions.xml").toAbsolutePath().toFile();
 
         //test map
 //        File entitiesFile = Paths.get("cw-stag"+ File.separator +"config" + File.separator + "james-entities.dot").toAbsolutePath().toFile();
